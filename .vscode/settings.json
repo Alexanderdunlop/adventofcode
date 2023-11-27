@@ -3,6 +3,7 @@
     "./rust/day/1/Cargo.toml",
     "./rust/day/2/Cargo.toml",
     "./rust/day/3/Cargo.toml",
-    "./rust/day/4/Cargo.toml"
+    "./rust/day/4/Cargo.toml",
+    "./rust/day/5/Cargo.toml"
   ]
 }
