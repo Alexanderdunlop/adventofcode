@@ -4,15 +4,15 @@ fn main() {
     let mut bar = 0;
     // replace with number in between for numbers like `twone`
     file
-        .replace("one", "one1one")
-        .replace("two", "two2two")
-        .replace("three", "three3three")
-        .replace("four", "four4four")
-        .replace("five", "five5five")
-        .replace("six", "six6six")
-        .replace("seven", "seven7seven")
-        .replace("eight", "eight8eight")
-        .replace("nine", "nine9nine")
+        .replace("one", "o1e")
+        .replace("two", "t2o")
+        .replace("three", "t3e")
+        .replace("four", "4")
+        .replace("five", "5e")
+        .replace("six", "6")
+        .replace("seven", "7n")
+        .replace("eight", "e8t")
+        .replace("nine", "n9e")
         .lines()
         .for_each(|line| {
             let chars: Vec<_> = line.chars().collect();
@@ -25,7 +25,7 @@ fn main() {
                 if foo > 9 {
                     i = i + 1;
                 } else {
-                    x = foo;
+                    x = foo * 10;
                     i = 0;
                 }
             }
@@ -35,9 +35,11 @@ fn main() {
                     i = i + 1;
                 } else {
                     y = foo;
+                    i = 0;
                 }
             }
-            bar += x * 10 + y;
+
+            bar += x + y;
         });
     
     println!("{}", bar);
